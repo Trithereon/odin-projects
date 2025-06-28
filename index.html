@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects Written for The Odin Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #003DA5 60%, #FFFFFF 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        a.top-link {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .project-card {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding-top: 0.8rem; 
+            padding-bottom: 1.5rem; 
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+        /* .project-icon {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(45deg, #003DA5, #FFFFFF);
+            border-radius: 50%;
+        } */
+        
+        .project-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .link-btn {
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .primary-link {
+            background: linear-gradient(45deg, #003DA5 60%, #FFFFFF 100%);
+            color: white;
+        }
+        
+        .primary-link:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .secondary-link {
+            background: rgba(102, 126, 234, 0.1);
+            color: #003DA5;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+        }
+        
+        .secondary-link:hover {
+            background: rgba(102, 126, 234, 0.2);
+        }
+        
+        .add-project {
+            background: rgba(255,255,255,0.1);
+            border: 2px dashed rgba(255,255,255,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .add-project:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.5);
+        }
+        
+        .add-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Projects</h1>
+            <p class="subtitle">Written for <a target="_blank" rel="noopener noreferrer" class="top-link" href="https://www.theodinproject.com/">The Odin Project</a></p>
+        </header>
+        
+        <div class="projects-grid">
+            <!-- Add new projects here. Newest first. -->
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Restaurant Page</p>
+                    <p>(JS)</p>
+                </div>
+                <div class="project-description">
+                    Features: Business site using DOM manipulation, dynamically generated content on a single webpage, first time using Webpack, each page has its own module to generate it.
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-restaurant-page/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/project-restaurant-page/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Tic Tac Toe</p>
+                     <p>(JS)</p>
+                </div>
+                <div class="project-description">
+                    Features: Game using factory functions and the module pattern, separating functions for gameboard logic and UI modification. A 2D array was built to hold gameboard state.
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-tictactoe/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/project-tictactoe/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Library</p>
+                     <p>(JS)</p>
+                </div>
+                <div class="project-description">
+                    Features: Library app using factory functions, later refactored to class usage, Book objects are created and stored in a library, the books have unique IDs generated at creation time. Users can add, remove, toggle read status on books.
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-library/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/project-library/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Admin Dashboard</p>
+                     <p>(Intermediate HTML/CSS)</p>
+                </div>
+                <div class="project-description">
+                    Features: A webpage that precisely matches a provided screenshot in terms of layout and colors. Lots of Grid and Flexbox usage, with very precise element positioning.
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-admin-dashboard/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/project-admin-dashboard/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Sign-up Form</p>
+                     <p>(Intermediate HTML/CSS)</p>
+                </div>
+                <div class="project-description">
+                    Features: Input form with a nice layout. Currently (27-Jun-2025) needs work to make it more responsive and zoom correctly.
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/TOP-Sign-up-Form/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/TOP-Sign-up-Form/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Calculator</p>
+                     <p>(Foundations - JS Basics)</p>
+                </div>
+                <div class="project-description">
+                    Features: Works like a regular calculator, with keyboard input! Event listeners for all the buttons, breaking down calculator application logic. I chose to input as string, then parse to numbers for math operations, which seems to work well. It even includes a favicon.
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-Calculator/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/project-Calculator/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div>        
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Etch-a-Sketch</p>
+                     <p>(Foundations - JS Basics)</p>
+                </div>
+                <div class="project-description">
+                    Features: A fun little game. Event listeners for mouse hover actions, grid size can be modified for higher or lower resolution. 
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/TOP_etch-a-sketch/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/TOP_etch-a-sketch/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div> 
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Rock-Paper-Scissors</p>
+                     <p>(Foundations - JS Basics)</p>
+                </div>
+                <div class="project-description">
+                    Features: Minimal UI. Computer picks rock, paper or scissors at random, the victor is announced and the score is updated. 
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/rock-paper-scissors/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/rock-paper-scissors/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div> 
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Landing Page</p>
+                     <p>(Foundations - CSS Flexbox)</p>
+                </div>
+                <div class="project-description">
+                    Features: Flexbox usage for layout. Welcome to my farm.
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/TOP-landing-page/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/TOP-landing-page/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div> 
+            <div class="project-card">
+                <div class="project-title">
+                    <div class="project-icon"></div>
+                    <p>Recipes</p>
+                    <p>(Foundations - HTML)</p>
+                </div>
+                <div class="project-description">
+                    Features: Very minimal HTML page with big clickable images linking to their recipe.
+                </div>
+                <div class="project-links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/odin-recipes/" class="link-btn primary-link">
+                        🌐 Live Demo
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon/odin-recipes/" class="link-btn secondary-link">
+                        📂 Source Code
+                    </a>
+                </div>
+            </div> 
+
+
+        </div>
+        
+        <footer>
+            <p>Find me on <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon" style="color: white; text-decoration: underline;">GitHub</a></p>
+        </footer>
+    </div>
+    
+    <script>     
+        // Add staggered animation to cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>
