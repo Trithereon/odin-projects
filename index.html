@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects Written for The Odin Project</title>
+    <title>Eliott Bourassa's Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -68,12 +68,7 @@
             padding-right: 1.5rem;
             box-shadow: 0 8px 32px rgba(0,0,0,0.1);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            animation: fadeInUp 0.8s ease-out;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            animation: fadeInUp 0.6s ease-out;
         }
 
         .project-title {
@@ -95,6 +90,8 @@
         } */
         
         .project-description {
+            display:flex;
+            flex-direction: column;
             color: #666;
             margin-bottom: 1.5rem;
             line-height: 1.6;
@@ -208,8 +205,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>My Projects</h1>
-            <p class="subtitle">Written for <a target="_blank" rel="noopener noreferrer" class="top-link" href="https://www.theodinproject.com/">The Odin Project</a></p>
+            <h1>Eliott Bourassa</h1>
+            <p class="subtitle">A selection of projects written for <a target="_blank" rel="noopener noreferrer" class="top-link" href="https://www.theodinproject.com/">The Odin Project curriculum</a></p>
         </header>
         
         <div class="projects-grid">
@@ -221,7 +218,8 @@
                     <p>(JS)</p>
                 </div>
                 <div class="project-description">
-                    Features: A weather app that fetches weather data from the Virtual Crossing Web API, processes the data and displays it. Uses dynamic import, fetch, and promises. Was built in a very modular component based way.
+                    <p>A weather app that fetches weather data from the Virtual Crossing Web API, processes the data and displays it. </p>
+                    <p><strong>Features:</strong> Dynamic import, fetch API, and promises. Was built in a very modular component-based way. </p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-weather-app/" class="link-btn primary-link">
@@ -239,7 +237,8 @@
                     <p>(JS)</p>
                 </div>
                 <div class="project-description">
-                    Features: A productivity app to manage and plan projects and tasks.
+                    <p>A productivity app to manage and plan projects and tasks.</p>
+                    <p><strong>Features:</strong> ES6 Modules for modular code, Webpack to build the website, localStorage to automatically save user changes, single-page website with dynamically generated content</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-todo-list/" class="link-btn primary-link">
@@ -257,7 +256,8 @@
                     <p>(JS)</p>
                 </div>
                 <div class="project-description">
-                    Features: Business site using DOM manipulation, dynamically generated content on a single webpage, first time using Webpack, each page has its own module to generate it.
+                    <p>Typical single-page restaurant website.</p>
+                    <p><strong>Features:</strong> Dynamically generated content on a single webpage, using DOM manipulation, first time using Webpack, each page has its own JS module with the code to generate it.</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-restaurant-page/" class="link-btn primary-link">
@@ -276,7 +276,8 @@
                      <p>(JS)</p>
                 </div>
                 <div class="project-description">
-                    Features: Game using factory functions and the module pattern, separating functions for gameboard logic and UI modification. A 2D array was built to hold gameboard state.
+                    <p>Tic-Tac-Toe game with a simple UI.</p>
+                    <p><strong>Features:</strong> Uses factory functions and the module pattern, separating functions for gameboard logic from functions for UI modification. A 2D array was built to hold the gameboard state.</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-tictactoe/" class="link-btn primary-link">
@@ -295,7 +296,8 @@
                      <p>(JS)</p>
                 </div>
                 <div class="project-description">
-                    Features: Library app using factory functions, later refactored to class usage, Book objects are created and stored in a library, the books have unique IDs generated at creation time. Users can add, remove, toggle read status on books.
+                    <p>App that displays a list of books and their details, and keeps track of read status.</p>
+                    <p><strong>Features:</strong> Uses factory functions, later refactored to use classes instead, Book objects are created and stored in a library, the books have unique IDs generated at creation time. Users can add, remove, toggle read status on books.</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-library/" class="link-btn primary-link">
@@ -314,7 +316,8 @@
                      <p>(Intermediate HTML/CSS)</p>
                 </div>
                 <div class="project-description">
-                    Features: A webpage that precisely matches a provided screenshot in terms of layout and colors. Lots of Grid and Flexbox usage, with very precise element positioning.
+                    <p>A webpage that precisely matches a provided screenshot in terms of layout and colors. </p>
+                    <p><strong>Features:</strong> Extensive Grid and Flexbox usage, with very precise element positioning.</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-admin-dashboard/" class="link-btn primary-link">
@@ -333,7 +336,8 @@
                      <p>(Intermediate HTML/CSS)</p>
                 </div>
                 <div class="project-description">
-                    Features: Input form with a nice layout. Currently (27-Jun-2025) needs work to make it more responsive and zoom correctly.
+                    <p>Input form with a nice layout, which matches a provided image file. </p>
+                    <p><strong>Features:</strong> Uses only Flexbox. Currently (27-Jun-2025) needs work to make it more responsive and zoom correctly.</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/TOP-Sign-up-Form/" class="link-btn primary-link">
@@ -352,7 +356,8 @@
                      <p>(Foundations - JS Basics)</p>
                 </div>
                 <div class="project-description">
-                    Features: Works like a regular calculator, with keyboard input! Event listeners for all the buttons, breaking down calculator application logic. I chose to input as string, then parse to numbers for math operations, which seems to work well. It even includes a favicon.
+                    <p>Works like a regular calculator, with keyboard input! </p>
+                    <p><strong>Features:</strong> Event listeners for all the buttons, breaking down calculator application logic. I chose to input as string, then parse to numbers for math operations, which seems to work well. It even includes a favicon!</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/project-Calculator/" class="link-btn primary-link">
@@ -370,7 +375,8 @@
                      <p>(Foundations - JS Basics)</p>
                 </div>
                 <div class="project-description">
-                    Features: A fun little game. Event listeners for mouse hover actions, grid size can be modified for higher or lower resolution. 
+                    <p>A fun little game. </p>
+                    <p><strong>Features:</strong> Event listeners for mouse hover actions, grid size can be modified for higher or lower resolution. </p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/TOP_etch-a-sketch/" class="link-btn primary-link">
@@ -388,7 +394,8 @@
                      <p>(Foundations - JS Basics)</p>
                 </div>
                 <div class="project-description">
-                    Features: Minimal UI. Computer picks rock, paper or scissors at random, the victor is announced and the score is updated. 
+                    <p>A game of rock-paper-scissors with minimal UI.  </p>
+                    <p><strong>Features:</strong> Computer picks rock, paper or scissors at random, the victor is announced and the score is updated.</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/rock-paper-scissors/" class="link-btn primary-link">
@@ -406,7 +413,8 @@
                      <p>(Foundations - CSS Flexbox)</p>
                 </div>
                 <div class="project-description">
-                    Features: Flexbox usage for layout. Welcome to my farm.
+                    <p>Welcome to my farm.</p>
+                    <p><strong>Features:</strong> Flexbox usage for layout. Matches a provided image file.</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/TOP-landing-page/" class="link-btn primary-link">
@@ -424,7 +432,8 @@
                     <p>(Foundations - HTML)</p>
                 </div>
                 <div class="project-description">
-                    Features: Very minimal HTML page with big clickable images linking to their recipe.
+                    <p>Very minimal HTML page with big clickable images linking to their recipe.</p>
+                    <p><strong>Features:</strong> Navigation between webpages for each recipe and the home page.</p>
                 </div>
                 <div class="project-links">
                     <a target="_blank" rel="noopener noreferrer" href="https://trithereon.github.io/odin-recipes/" class="link-btn primary-link">
