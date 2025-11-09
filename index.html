@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #003DA5 60%, #FFFFFF 100%);
+            background: linear-gradient(239deg, #003DA5 60%, #FFFFFF 150%);
             min-height: 100vh;
             color: #333;
             user-select: none;
@@ -37,6 +37,12 @@
             font-size: 3rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        a.linkedin {
+            color: inherit;
+            font-size: inherit;
+            text-shadow: inherit;
+            text-decoration: none;
         }
 
         a.top-link {
@@ -180,6 +186,16 @@
             margin-top: 3rem;
             color: rgba(255,255,255,0.8);
         }
+
+        .flag {
+            width:50px;
+        }
+        .flags-container {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
         
         @keyframes fadeInDown {
             from {
@@ -208,7 +224,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Eliott Bourassa</h1>
+            <h1><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/eliottbourassa/">Eliott Bourassa</a></h1>
             <p class="subtitle">A selection of projects written for <a target="_blank" rel="noopener noreferrer" class="top-link" href="https://www.theodinproject.com/">The Odin Project curriculum</a></p>
         </header>
         
@@ -464,6 +480,7 @@
         </div>
         
         <footer>
+            <div class="flags-container"><img class="flag" src="img/Flag_of_Quebec.svg" alt="flag of quebec"><em>Conçu au Québec, Canada</em><img class="flag" src="img/Flag_of_Canada.svg" alt=""></div>
             <p>Find me on <a target="_blank" rel="noopener noreferrer" href="https://github.com/Trithereon" style="color: white; text-decoration: underline;">GitHub</a></p>
         </footer>
     </div>
